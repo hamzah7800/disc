@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Offline GitHub Pages Site</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offline Chat</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <h1>🚀 GitHub Pages – 24/7 Offline Website</h1>
-  <p>This site works fully offline after first load.</p>
-  <button onclick="alert('Working offline!')">Test Offline</button>
+<div id="chat-container">
+  <div id="messages"></div>
+  <div id="input-area">
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button id="send-btn">Send</button>
+  </div>
+</div>
 
-  <script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
